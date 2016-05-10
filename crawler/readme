@@ -1,0 +1,10 @@
+How to use it:
+1. Open 'www.cnki.net' in a browser, click on '文献全部分类' and choose '医药卫生科技' -> '心血管系统疾病'. Use the developer tools of the browser to find the cookie of 'default_result.aspx' and copy it to the first line of the file 'cookie'.
+2. Click on the title of any paper, copy the cookie of 'JourLm.aspx?......' to the second line of the file 'cookie'.
+3. cmd: python crawler.py #year #page
+#year can be 1990 to 2016. #page is the index of a list of papers, can be 1 to 120. A list contains 50 papers.
+4. Before downloading another list of papers, wait for a period.
+
+Remaining problems:
+1. Some downloaded files are not in pdf format. They are caj or kdh. Haven't figure out why it happens.
+2. If you download too frequently, you will be prohibited from downloading papers until the next day.
